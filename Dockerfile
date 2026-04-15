@@ -21,10 +21,5 @@ RUN mkdir -p data && \
 # Expose port (Railway will set PORT env var)
 EXPOSE 8000
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
-
-# Run application - Railway sets PORT env var
+# Run application - Use shell form to allow PORT env var expansion
 CMD uvicorn app_file_based:app --host 0.0.0.0 --port ${PORT:-8000}
-# Force rebuild Wed Apr 15 14:35:43 CDT 2026
