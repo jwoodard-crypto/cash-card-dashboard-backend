@@ -8,8 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application files
 COPY app_file_based.py .
-COPY start.sh .
-RUN chmod +x start.sh
 
 # Copy data directory with initial JSON files
 COPY data/ ./data/
@@ -20,5 +18,5 @@ RUN mkdir -p data && \
     test -f data/network_rejects.json || echo "[]" > data/network_rejects.json && \
     test -f data/current_backlog.json || echo "{}" > data/current_backlog.json
 
-# Run application
-CMD ["./start.sh"]
+# Run application - use shell form to expand PORT variable
+CMD uvicorn app_file_based:app --host 0.0.0.0 --port $PORT
