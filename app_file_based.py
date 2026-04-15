@@ -174,7 +174,13 @@ async def get_complete_summary():
     # Load all data files
     queue_data = load_json_file("queue_volumes.json")
     reject_data = load_json_file("network_rejects.json")
-    backlog_data = load_json_file("current_backlog.json")
+    backlog_data_raw = load_json_file("current_backlog.json")
+    
+    # Ensure backlog_data is a list
+    if isinstance(backlog_data_raw, dict):
+        backlog_data = [backlog_data_raw]
+    else:
+        backlog_data = backlog_data_raw if backlog_data_raw else []
     
     # Get today's date
     today = queue_data[0]["date"] if queue_data else None
