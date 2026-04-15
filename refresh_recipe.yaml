@@ -1,0 +1,41 @@
+name: refresh-cash-card-dashboard
+title: Refresh Cash Card Dashboard
+description: Refresh Cash Card Dashboard data from Snowflake
+version: 1.0.0
+
+instructions: |
+  Refresh the Cash Card Dashboard with latest data.
+  
+  Step 1: Run this queue volumes query and save results to cash_card_dashboard_backend/data/queue_volumes.json as a JSON array:
+  
+  WITH daily_volumes AS (
+      SELECT DATE, QUEUE_NAME, ENTERED as cases_entered, HANDLED as cases_handled, HANDLE_TIME_HOURS
+      FROM APP_DATAMART_CCO.SFDC_CFONE.DISPUTE_VOLUME_BY_QUEUE_DRILL_DOWN
+      WHERE QUEUE_NAME IN ('Disputes Cash Card', 'Disputes Service Claim') AND DATE >= DATEADD('day', -30, CURRENT_DATE())
+  ), rolling_avg AS (
+      SELECT DATE, QUEUE_NAME, cases_entered, cases_handled, HANDLE_TIME_HOURS,
+             AVG(cases_entered) OVER (PARTITION BY QUEUE_NAME ORDER BY DATE ROWS BETWEEN 7 PRECEDING AND 1 PRECEDING) as avg_7day_entered,
+             STDDEV(cases_entered) OVER (PARTITION BY QUEUE_NAME ORDER BY DATE ROWS BETWEEN 7 PRECEDING AND 1 PRECEDING) as stddev_7day_entered
+      FROM daily_volumes
+  )
+  SELECT TO_CHAR(DATE, 'YYYY-MM-DD') as date, QUEUE_NAME as queue_name, cases_entered, cases_handled,
+         ROUND(HANDLE_TIME_HOURS, 2) as handle_time_hours, ROUND(avg_7day_entered, 1) as baseline_avg,
+         CASE WHEN cases_entered > (avg_7day_entered + (2 * stddev_7day_entered)) THEN 'SPIKE' ELSE 'NORMAL' END as spike_alert,
+         ROUND(((cases_entered - avg_7day_entered) / NULLIF(avg_7day_entered, 0)) * 100, 1) as pct_change_from_baseline
+  FROM rolling_avg WHERE DATE >= DATEADD('day', -14, CURRENT_DATE()) ORDER BY DATE DESC, QUEUE_NAME;
+  
+  Step 2: Run this network rejects query and save to cash_card_dashboard_backend/data/network_rejects.json as a JSON array:
+  
+  WITH network_rejects AS (
+      SELECT TO_CHAR(DATE_TRUNC('day', CASE_CREATION_DATE_TIME_UTC), 'YYYY-MM-DD') as reject_date,
+             CASE WHEN SPONSORING_BANK = 'SUTTON' THEN 'Marqeta' WHEN SPONSORING_BANK IS NULL THEN 'Unknown' ELSE SPONSORING_BANK END as network_source,
+             COUNT(DISTINCT SALESFORCE_CASE_NUMBER) as reject_count,
+             ROUND(SUM(DISPUTRON_DISPUTED_AMOUNT_DOLLARS), 2) as disputed_amount_usd
+      FROM CASH_DISPUTES.PUBLIC.CC_DISPUTES_CLAIM_DETAILS
+      WHERE IDS_REJECTED_BY_NETWORK_REASON IS NOT NULL AND CASE_CREATION_DATE_TIME_UTC >= DATEADD('day', -14, CURRENT_DATE())
+      GROUP BY 1, 2
+  )
+  SELECT reject_date, network_source, reject_count, disputed_amount_usd
+  FROM network_rejects ORDER BY reject_date DESC, network_source;
+  
+  Step 3: Confirm both files updated and note any spikes >20K cases.

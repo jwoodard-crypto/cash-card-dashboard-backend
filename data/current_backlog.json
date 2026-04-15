@@ -1,0 +1,16 @@
+[
+  {
+    "queue_name": "Disputes Cash Card",
+    "current_cases": 24173,
+    "cases_aged_2plus_days": 21212,
+    "avg_age_days": 18.0,
+    "last_updated": "2026-04-06T20:35:00Z"
+  },
+  {
+    "queue_name": "Disputes Service Claim",
+    "current_cases": 39793,
+    "cases_aged_2plus_days": 36680,
+    "avg_age_days": 21.7,
+    "last_updated": "2026-04-06T20:35:00Z"
+  }
+]

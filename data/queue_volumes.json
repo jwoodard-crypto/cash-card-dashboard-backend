@@ -1,0 +1,302 @@
+[
+  {
+    "date": "2026-04-15",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 608,
+    "cases_handled": 181,
+    "handle_time_hours": 7.60,
+    "baseline_avg": 2889.6,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -79.0
+  },
+  {
+    "date": "2026-04-15",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 487,
+    "cases_handled": 4,
+    "handle_time_hours": 0.24,
+    "baseline_avg": 2636.4,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -81.5
+  },
+  {
+    "date": "2026-04-14",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 3083,
+    "cases_handled": 3022,
+    "handle_time_hours": 273.73,
+    "baseline_avg": 2901.0,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": 6.3
+  },
+  {
+    "date": "2026-04-14",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2790,
+    "cases_handled": 3784,
+    "handle_time_hours": 370.19,
+    "baseline_avg": 2654.6,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": 5.1
+  },
+  {
+    "date": "2026-04-13",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 2608,
+    "cases_handled": 2933,
+    "handle_time_hours": 261.22,
+    "baseline_avg": 2922.9,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -10.8
+  },
+  {
+    "date": "2026-04-13",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2400,
+    "cases_handled": 4218,
+    "handle_time_hours": 412.93,
+    "baseline_avg": 2658.6,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -9.7
+  },
+  {
+    "date": "2026-04-12",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 2509,
+    "cases_handled": 2507,
+    "handle_time_hours": 229.18,
+    "baseline_avg": 3009.7,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -16.6
+  },
+  {
+    "date": "2026-04-12",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2422,
+    "cases_handled": 1184,
+    "handle_time_hours": 117.80,
+    "baseline_avg": 2671.9,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -9.4
+  },
+  {
+    "date": "2026-04-11",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 2935,
+    "cases_handled": 2772,
+    "handle_time_hours": 199.59,
+    "baseline_avg": 3034.7,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -3.3
+  },
+  {
+    "date": "2026-04-11",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2711,
+    "cases_handled": 1182,
+    "handle_time_hours": 99.22,
+    "baseline_avg": 2674.6,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": 1.4
+  },
+  {
+    "date": "2026-04-10",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 3149,
+    "cases_handled": 3251,
+    "handle_time_hours": 285.02,
+    "baseline_avg": 3162.4,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -0.4
+  },
+  {
+    "date": "2026-04-10",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2613,
+    "cases_handled": 2709,
+    "handle_time_hours": 234.74,
+    "baseline_avg": 2689.7,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -2.9
+  },
+  {
+    "date": "2026-04-09",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 3184,
+    "cases_handled": 2638,
+    "handle_time_hours": 218.91,
+    "baseline_avg": 3491.0,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -8.8
+  },
+  {
+    "date": "2026-04-09",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2684,
+    "cases_handled": 4738,
+    "handle_time_hours": 391.52,
+    "baseline_avg": 2707.7,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -0.9
+  },
+  {
+    "date": "2026-04-08",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 2759,
+    "cases_handled": 3811,
+    "handle_time_hours": 287.42,
+    "baseline_avg": 3922.3,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -29.7
+  },
+  {
+    "date": "2026-04-08",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2835,
+    "cases_handled": 4044,
+    "handle_time_hours": 334.45,
+    "baseline_avg": 2715.4,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": 4.4
+  },
+  {
+    "date": "2026-04-07",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 3163,
+    "cases_handled": 4630,
+    "handle_time_hours": 341.55,
+    "baseline_avg": 4050.0,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -21.9
+  },
+  {
+    "date": "2026-04-07",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2917,
+    "cases_handled": 4370,
+    "handle_time_hours": 342.79,
+    "baseline_avg": 2752.7,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": 6.0
+  },
+  {
+    "date": "2026-04-06",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 2761,
+    "cases_handled": 3418,
+    "handle_time_hours": 270.49,
+    "baseline_avg": 4231.4,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -34.8
+  },
+  {
+    "date": "2026-04-06",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2428,
+    "cases_handled": 3480,
+    "handle_time_hours": 265.27,
+    "baseline_avg": 2789.9,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -13.0
+  },
+  {
+    "date": "2026-04-05",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 3117,
+    "cases_handled": 2035,
+    "handle_time_hours": 143.32,
+    "baseline_avg": 4324.3,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -27.9
+  },
+  {
+    "date": "2026-04-05",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2515,
+    "cases_handled": 1269,
+    "handle_time_hours": 97.94,
+    "baseline_avg": 2811.3,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -10.5
+  },
+  {
+    "date": "2026-04-04",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 3110,
+    "cases_handled": 2908,
+    "handle_time_hours": 265.45,
+    "baseline_avg": 4387.3,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -29.1
+  },
+  {
+    "date": "2026-04-04",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2730,
+    "cases_handled": 2349,
+    "handle_time_hours": 188.59,
+    "baseline_avg": 2816.6,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -3.1
+  },
+  {
+    "date": "2026-04-03",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 4043,
+    "cases_handled": 4485,
+    "handle_time_hours": 487.08,
+    "baseline_avg": 4221.6,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -4.2
+  },
+  {
+    "date": "2026-04-03",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2719,
+    "cases_handled": 2335,
+    "handle_time_hours": 234.06,
+    "baseline_avg": 2793.1,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": -2.7
+  },
+  {
+    "date": "2026-04-02",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 5484,
+    "cases_handled": 5409,
+    "handle_time_hours": 638.16,
+    "baseline_avg": 3811.4,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": 43.9
+  },
+  {
+    "date": "2026-04-02",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2810,
+    "cases_handled": 2650,
+    "handle_time_hours": 262.47,
+    "baseline_avg": 2766.3,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": 1.6
+  },
+  {
+    "date": "2026-04-01",
+    "queue_name": "Disputes Cash Card",
+    "cases_entered": 5778,
+    "cases_handled": 4739,
+    "handle_time_hours": 547.26,
+    "baseline_avg": 3426.9,
+    "spike_alert": "SPIKE",
+    "pct_change_from_baseline": 68.6
+  },
+  {
+    "date": "2026-04-01",
+    "queue_name": "Disputes Service Claim",
+    "cases_entered": 2889,
+    "cases_handled": 2896,
+    "handle_time_hours": 281.02,
+    "baseline_avg": 2734.4,
+    "spike_alert": "NORMAL",
+    "pct_change_from_baseline": 5.7
+  }
+]
