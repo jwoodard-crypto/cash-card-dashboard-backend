@@ -14,14 +14,11 @@ RUN chmod +x start.sh
 # Copy data directory with initial JSON files
 COPY data/ ./data/
 
-# Ensure data files exist (Railway will use these as fallback)
+# Ensure data files exist
 RUN mkdir -p data && \
     test -f data/queue_volumes.json || echo "[]" > data/queue_volumes.json && \
     test -f data/network_rejects.json || echo "[]" > data/network_rejects.json && \
     test -f data/current_backlog.json || echo "{}" > data/current_backlog.json
-
-# Expose port (Railway will set PORT env var)
-EXPOSE ${PORT:-8000}
 
 # Run application
 CMD ["./start.sh"]

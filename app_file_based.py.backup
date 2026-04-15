@@ -89,12 +89,6 @@ async def health_check():
         data_files_exist=queue_file_exists and reject_file_exists
     )
 
-
-@app.get("/health")
-async def simple_health():
-    """Simple health check for Railway"""
-    return {"status": "ok", "timestamp": datetime.utcnow().isoformat()}
-
 @app.get("/api/queue-volumes", response_model=List[QueueMetric])
 async def get_queue_volumes():
     """Get queue volumes with spike detection"""
