@@ -1,182 +1,32 @@
 [
-  {
-    "reject_date": "2026-04-15",
-    "network_source": "Marqeta",
-    "reject_count": 2715,
-    "disputed_amount_usd": 177149.13
-  },
-  {
-    "reject_date": "2026-04-15",
-    "network_source": "Unknown",
-    "reject_count": 5,
-    "disputed_amount_usd": 280.53
-  },
-  {
-    "reject_date": "2026-04-14",
-    "network_source": "Marqeta",
-    "reject_count": 7486,
-    "disputed_amount_usd": 530086.31
-  },
-  {
-    "reject_date": "2026-04-14",
-    "network_source": "Unknown",
-    "reject_count": 23,
-    "disputed_amount_usd": 847.28
-  },
-  {
-    "reject_date": "2026-04-13",
-    "network_source": "Marqeta",
-    "reject_count": 6460,
-    "disputed_amount_usd": 490771.31
-  },
-  {
-    "reject_date": "2026-04-13",
-    "network_source": "Unknown",
-    "reject_count": 59,
-    "disputed_amount_usd": 691.59
-  },
-  {
-    "reject_date": "2026-04-12",
-    "network_source": "Marqeta",
-    "reject_count": 6603,
-    "disputed_amount_usd": 571460.14
-  },
-  {
-    "reject_date": "2026-04-12",
-    "network_source": "Unknown",
-    "reject_count": 32,
-    "disputed_amount_usd": 1472.65
-  },
-  {
-    "reject_date": "2026-04-11",
-    "network_source": "Marqeta",
-    "reject_count": 7300,
-    "disputed_amount_usd": 631334.52
-  },
-  {
-    "reject_date": "2026-04-11",
-    "network_source": "Unknown",
-    "reject_count": 255,
-    "disputed_amount_usd": 16117.48
-  },
-  {
-    "reject_date": "2026-04-10",
-    "network_source": "Marqeta",
-    "reject_count": 7516,
-    "disputed_amount_usd": 693531.33
-  },
-  {
-    "reject_date": "2026-04-10",
-    "network_source": "Unknown",
-    "reject_count": 457,
-    "disputed_amount_usd": 32420.24
-  },
-  {
-    "reject_date": "2026-04-09",
-    "network_source": "Marqeta",
-    "reject_count": 7372,
-    "disputed_amount_usd": 821042.88
-  },
-  {
-    "reject_date": "2026-04-09",
-    "network_source": "Unknown",
-    "reject_count": 351,
-    "disputed_amount_usd": 30580.58
-  },
-  {
-    "reject_date": "2026-04-08",
-    "network_source": "Marqeta",
-    "reject_count": 7090,
-    "disputed_amount_usd": 775481.79
-  },
-  {
-    "reject_date": "2026-04-08",
-    "network_source": "Unknown",
-    "reject_count": 420,
-    "disputed_amount_usd": 31462.14
-  },
-  {
-    "reject_date": "2026-04-07",
-    "network_source": "Marqeta",
-    "reject_count": 7447,
-    "disputed_amount_usd": 757479.33
-  },
-  {
-    "reject_date": "2026-04-07",
-    "network_source": "Unknown",
-    "reject_count": 192,
-    "disputed_amount_usd": 13827.54
-  },
-  {
-    "reject_date": "2026-04-06",
-    "network_source": "Marqeta",
-    "reject_count": 6452,
-    "disputed_amount_usd": 580575.73
-  },
-  {
-    "reject_date": "2026-04-06",
-    "network_source": "Unknown",
-    "reject_count": 296,
-    "disputed_amount_usd": 22504.06
-  },
-  {
-    "reject_date": "2026-04-05",
-    "network_source": "Marqeta",
-    "reject_count": 6413,
-    "disputed_amount_usd": 663402.12
-  },
-  {
-    "reject_date": "2026-04-05",
-    "network_source": "Unknown",
-    "reject_count": 293,
-    "disputed_amount_usd": 30936.0
-  },
-  {
-    "reject_date": "2026-04-04",
-    "network_source": "Marqeta",
-    "reject_count": 7369,
-    "disputed_amount_usd": 801019.15
-  },
-  {
-    "reject_date": "2026-04-04",
-    "network_source": "Unknown",
-    "reject_count": 258,
-    "disputed_amount_usd": 23978.73
-  },
-  {
-    "reject_date": "2026-04-03",
-    "network_source": "Marqeta",
-    "reject_count": 7922,
-    "disputed_amount_usd": 793269.36
-  },
-  {
-    "reject_date": "2026-04-03",
-    "network_source": "Unknown",
-    "reject_count": 816,
-    "disputed_amount_usd": 78476.6
-  },
-  {
-    "reject_date": "2026-04-02",
-    "network_source": "Marqeta",
-    "reject_count": 8472,
-    "disputed_amount_usd": 909020.56
-  },
-  {
-    "reject_date": "2026-04-02",
-    "network_source": "Unknown",
-    "reject_count": 2365,
-    "disputed_amount_usd": 170478.43
-  },
-  {
-    "reject_date": "2026-04-01",
-    "network_source": "Marqeta",
-    "reject_count": 8235,
-    "disputed_amount_usd": 892607.57
-  },
-  {
-    "reject_date": "2026-04-01",
-    "network_source": "Unknown",
-    "reject_count": 2215,
-    "disputed_amount_usd": 222151.79
-  }
+  {"reject_date": "2026-04-15", "network_source": "Marqeta", "reject_count": 2776, "disputed_amount_usd": 212881.16},
+  {"reject_date": "2026-04-15", "network_source": "Unknown", "reject_count": 5, "disputed_amount_usd": 280.53},
+  {"reject_date": "2026-04-14", "network_source": "Marqeta", "reject_count": 7486, "disputed_amount_usd": 553657.87},
+  {"reject_date": "2026-04-14", "network_source": "Unknown", "reject_count": 23, "disputed_amount_usd": 847.28},
+  {"reject_date": "2026-04-13", "network_source": "Marqeta", "reject_count": 6460, "disputed_amount_usd": 496739.88},
+  {"reject_date": "2026-04-13", "network_source": "Unknown", "reject_count": 59, "disputed_amount_usd": 1231.39},
+  {"reject_date": "2026-04-12", "network_source": "Marqeta", "reject_count": 6603, "disputed_amount_usd": 571470.13},
+  {"reject_date": "2026-04-12", "network_source": "Unknown", "reject_count": 32, "disputed_amount_usd": 1472.65},
+  {"reject_date": "2026-04-11", "network_source": "Marqeta", "reject_count": 7300, "disputed_amount_usd": 631437.45},
+  {"reject_date": "2026-04-11", "network_source": "Unknown", "reject_count": 255, "disputed_amount_usd": 16117.48},
+  {"reject_date": "2026-04-10", "network_source": "Marqeta", "reject_count": 7516, "disputed_amount_usd": 697987.09},
+  {"reject_date": "2026-04-10", "network_source": "Unknown", "reject_count": 457, "disputed_amount_usd": 32681.61},
+  {"reject_date": "2026-04-09", "network_source": "Marqeta", "reject_count": 7372, "disputed_amount_usd": 850990.72},
+  {"reject_date": "2026-04-09", "network_source": "Unknown", "reject_count": 351, "disputed_amount_usd": 31478.51},
+  {"reject_date": "2026-04-08", "network_source": "Marqeta", "reject_count": 7090, "disputed_amount_usd": 775880.31},
+  {"reject_date": "2026-04-08", "network_source": "Unknown", "reject_count": 420, "disputed_amount_usd": 32121.54},
+  {"reject_date": "2026-04-07", "network_source": "Marqeta", "reject_count": 7447, "disputed_amount_usd": 757479.33},
+  {"reject_date": "2026-04-07", "network_source": "Unknown", "reject_count": 192, "disputed_amount_usd": 13827.54},
+  {"reject_date": "2026-04-06", "network_source": "Marqeta", "reject_count": 6452, "disputed_amount_usd": 580575.73},
+  {"reject_date": "2026-04-06", "network_source": "Unknown", "reject_count": 296, "disputed_amount_usd": 22504.06},
+  {"reject_date": "2026-04-05", "network_source": "Marqeta", "reject_count": 6413, "disputed_amount_usd": 663402.12},
+  {"reject_date": "2026-04-05", "network_source": "Unknown", "reject_count": 293, "disputed_amount_usd": 30936.00},
+  {"reject_date": "2026-04-04", "network_source": "Marqeta", "reject_count": 7369, "disputed_amount_usd": 801019.15},
+  {"reject_date": "2026-04-04", "network_source": "Unknown", "reject_count": 258, "disputed_amount_usd": 23978.73},
+  {"reject_date": "2026-04-03", "network_source": "Marqeta", "reject_count": 7922, "disputed_amount_usd": 793269.36},
+  {"reject_date": "2026-04-03", "network_source": "Unknown", "reject_count": 816, "disputed_amount_usd": 78476.60},
+  {"reject_date": "2026-04-02", "network_source": "Marqeta", "reject_count": 8472, "disputed_amount_usd": 909020.56},
+  {"reject_date": "2026-04-02", "network_source": "Unknown", "reject_count": 2365, "disputed_amount_usd": 170478.43},
+  {"reject_date": "2026-04-01", "network_source": "Marqeta", "reject_count": 8235, "disputed_amount_usd": 892607.57},
+  {"reject_date": "2026-04-01", "network_source": "Unknown", "reject_count": 2215, "disputed_amount_usd": 222151.79}
 ]
