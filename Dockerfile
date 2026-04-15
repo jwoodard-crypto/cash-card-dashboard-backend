@@ -27,3 +27,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 
 # Run application - Railway sets PORT env var
 CMD uvicorn app_file_based:app --host 0.0.0.0 --port ${PORT:-8000}
+# Force rebuild Wed Apr 15 14:35:43 CDT 2026
