@@ -194,20 +194,20 @@ async def get_complete_summary():
     
     return {
         "cashCardQueue": {
-            "current": 3527,  # Agent-facing queue
-            "pipeline_total": cash_card_backlog.get("current_cases", 24173),  # Top of funnel
-            "entered_today": cash_card_flow.get("cases_entered", 0),
-            "handled_today": cash_card_flow.get("cases_handled", 0),
+            "current": cash_card_backlog.get("unassigned_cases", 60),  # Agent-facing queue (unassigned only, matches CF1)
+            "pipeline_total": cash_card_backlog.get("pipeline_total", 20687),  # Full backlog for spike alerts
+            "entered_today": cash_card_backlog.get("entered_today", 0),
+            "handled_today": cash_card_backlog.get("handled_today", 0),
             "avg_age_days": round(cash_card_backlog.get("avg_age_days", 0), 1),
-            "aged_2plus_days": cash_card_backlog.get("cases_aged_2plus_days", 0)
+            "aged_2plus_days": cash_card_backlog.get("aged_2plus_days", 0)
         },
         "serviceClaimsQueue": {
-            "current": 6537,  # Agent-facing queue
-            "pipeline_total": service_claims_backlog.get("current_cases", 39793),  # Top of funnel
-            "entered_today": service_claims_flow.get("cases_entered", 0),
-            "handled_today": service_claims_flow.get("cases_handled", 0),
+            "current": service_claims_backlog.get("unassigned_cases", 677),  # Agent-facing queue (unassigned only, matches CF1)
+            "pipeline_total": service_claims_backlog.get("pipeline_total", 35227),  # Full backlog for spike alerts
+            "entered_today": service_claims_backlog.get("entered_today", 0),
+            "handled_today": service_claims_backlog.get("handled_today", 0),
             "avg_age_days": round(service_claims_backlog.get("avg_age_days", 0), 1),
-            "aged_2plus_days": service_claims_backlog.get("cases_aged_2plus_days", 0)
+            "aged_2plus_days": service_claims_backlog.get("aged_2plus_days", 0)
         },
         "networkRejects": {
             "marqeta": marqeta_rejects,

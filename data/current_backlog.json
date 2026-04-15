@@ -1,23 +1,20 @@
-{
-  "cashCardQueue": {
-    "current": 20687,
+[
+  {
+    "queue_name": "Disputes Cash Card",
+    "unassigned_cases": 60,
+    "pipeline_total": 20687,
+    "entered_today": 1318,
+    "handled_today": 181,
     "avg_age_days": 19.9,
     "aged_2plus_days": 19531
   },
-  "serviceClaimsQueue": {
-    "current": 35227,
+  {
+    "queue_name": "Disputes Service Claim",
+    "unassigned_cases": 677,
+    "pipeline_total": 35227,
+    "entered_today": 1045,
+    "handled_today": 4,
     "avg_age_days": 22.7,
     "aged_2plus_days": 33226
-  },
-  "entered_handled_today": {
-    "cashCard": {
-      "entered": 1318,
-      "handled": 181
-    },
-    "serviceClaims": {
-      "entered": 1045,
-      "handled": 4
-    }
-  },
-  "last_updated": "2026-04-15T20:04:06Z"
-}
+  }
+]
